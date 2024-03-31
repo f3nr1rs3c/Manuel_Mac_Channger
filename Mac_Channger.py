@@ -14,17 +14,17 @@ f = Figlet(font='slant')
 print(Fore.BLUE + f.renderText('Mac Channger') + Fore.RESET)
 
 # os.system(Fore.BLUE + "figlet Mac Channger" + Fore.RESET)
-print(Fore.RED + "          | - | Made By : f3nr1r - Cyber Security | - |         " + Fore.RESET)
+print(Fore.RED + "          | - | Made By : F3NR1R - Cyber Security | - |         " + Fore.RESET)
     
 print("""
 
-1) Mac Address Random
-2) Mac Address Manual
-3) Mac Address Original
+{0}1){2} Mac Address Random
+{0}2){2} Mac Address Manual
+{0}3){2} Mac Address Original
 
-""")
+""".format(Fore.RED, "0", Fore.RESET, "1", "2", "3", "4", "5", "6", "7", "8", "9", Fore.RESET))
 
-choice = input("Enter Transaction Number: ")
+choice = input(Fore.CYAN + "Enter Transaction Number: " + Fore.RESET)
 
 if(choice=="1"):
     os.system("ifconfig eth0 down")
